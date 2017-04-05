@@ -18,6 +18,6 @@ public class Course {
     }
 
     public void setName(String selectedText) {
-        this.name = selectedText.trim();
+        this.name = selectedText;
     }
 }

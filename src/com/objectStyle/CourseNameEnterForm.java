@@ -3,22 +3,21 @@ package com.objectStyle;
 import com.objectStyle.bean.Course;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
 
 public class CourseNameEnterForm {
     private JTextField courseName;
     private JPanel panelMain;
     private JLabel courseNameLabel;
-    private JButton courseNameSet;
+
 
     public CourseNameEnterForm() {
-        courseNameSet.addActionListener(new ActionListener() {
+        courseName.addFocusListener(new FocusAdapter() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void focusLost(FocusEvent e) {
                 Course course = Course.getInstance();
-                course.setName(courseName.getText());
-                //JOptionPane.showMessageDialog(null, "You name entered is:[" + course.getName() + "]");
+                course.setName(courseName.getText().trim());
             }
         });
     }
