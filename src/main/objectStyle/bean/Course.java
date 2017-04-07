@@ -1,4 +1,4 @@
-package com.objectStyle.bean;
+package main.objectStyle.bean;
 
 public class Course {
 

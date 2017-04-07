@@ -1,6 +1,6 @@
-package com.objectStyle;
+package main.objectStyle;
 
-import com.objectStyle.bean.Course;
+import main.objectStyle.bean.Course;
 
 import javax.swing.*;
 import java.awt.event.FocusAdapter;
