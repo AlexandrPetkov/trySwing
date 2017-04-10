@@ -1,6 +1,7 @@
 package main.objectStyle;
 
 import main.objectStyle.bean.Course;
+import main.objectStyle.textField.OnlyNumbersTextField;
 
 import javax.swing.*;
 import java.awt.event.FocusAdapter;
@@ -10,7 +11,6 @@ public class CourseNameEnterForm {
     private JTextField courseName;
     private JPanel panelMain;
     private JLabel courseNameLabel;
-
 
     public CourseNameEnterForm() {
         courseName.addFocusListener(new FocusAdapter() {
