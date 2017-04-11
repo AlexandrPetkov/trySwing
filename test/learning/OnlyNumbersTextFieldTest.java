@@ -7,9 +7,6 @@ import org.junit.Test;
 
 import javax.swing.*;
 
-/**
- * Created by objectstyle on 4/10/17.
- */
 public class OnlyNumbersTextFieldTest {
     JTextField field;
 
